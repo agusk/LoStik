@@ -24,7 +24,7 @@ parser.add_argument('--deveui', help="Device EUI", default="")
 
 args = parser.parse_args()
 
-OTAA_RETRIES = 5
+OTAA_RETRIES = 30
 
 class MaxRetriesError(Exception):
     pass

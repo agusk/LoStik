@@ -17,7 +17,8 @@ args = parser.parse_args()
 config = configparser.ConfigParser()
 config.read(args.config)
 
-ser = serial.Serial(args.port, baudrate=57600, timeout=10)
+args.port = 'COM12'
+ser = serial.Serial(args.port, baudrate=57600)
 
 
 # Print iterations progress
